@@ -1,6 +1,11 @@
 # Baconchain API Document
 
-Simple API for Baconchain Wallet users to send and receive tokens payments.
+Simple API for Baconchain wallet users to send and receive tokens payments.
+
+## Endpoints
+
+- `https://apibacon.com`
+- `https://testbacon.com` (Testnet)
 
 ## API List
 
@@ -33,7 +38,7 @@ Simple API for Baconchain Wallet users to send and receive tokens payments.
 
 ### Get balance
 
-- Description：Balance inquiries and get tokens informations.
+- Description：Balance inquiries and get tokens information.
 - Method：GET
 - URL：`https://apibacon.com/balance?key=$key&address=$address`
     - `key`：API key.
