@@ -4,8 +4,8 @@ Simple API for Baconchain wallet users to send and receive tokens payments.
 
 ## Endpoints
 
-- `https://apibacon.com`
-- `https://testbacon.com` (Testnet)
+- Main-network：`https://apibacon.com`
+- Test-network：`https://testbacon.com`
 
 ## API List
 
@@ -127,35 +127,4 @@ Simple API for Baconchain wallet users to send and receive tokens payments.
 	to=s4y7jrSU9Fey4NNWGZtM6cpYcu7GoaQ8Ax
 	&
 	amount=15
-	```
-
-### ID address
-
-- Description：Link address to email, phone number, credit card number or bank account.
-- Method：GET
-- URL：`https://apibacon.com/idaddress?key=$key&id=$id&address=$address`
-    - `key`：API key.
-    - `id`：Email / Phone number / Credit card number / Bank account
-    - `address`：Baconchain address.
-- Response (success)：
-    ```
-    {
-        "transaction_hash": "5872d01ad784e5deeb25464a5781c3b20971c1863679ca506e702e3e33c18e9c"
-    }
-    ```
-    - transaction_hash：Transaction hash
-- Response (error)：
-    ``` 
-    {
-        "message": "Argument missing."
-    }
-    ```
-- Example
-	```
-	https://apibacon.com/idaddress?
-	key=a2cdfea9-db4a-410a-b46c-92ccb318852b
-	&
-	id=amy1548@gmail.com
-	&
-	address=w8rs3hMX7jzHZEKmbfahNNqJAmLGkd38rb
 	```
